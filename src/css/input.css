@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary-green: #00856F;
+    --color-primary-green-light: #DCE9E2;
+    --color-primary-green-light-02: #F7F9F9;
+    --color-primary-green-beige: #FFFAF1;
+    --color-primary-green-hover: #00453A;
+    --color-secondary-gray-headline: #061800;
+    --color-secondary-gray-paragraph: #384633;
+    --color-secondary-gray-white: #3E3E3E;
+    --font-dmSans: "DM Sans", "sans-serif";
+    --breakpoint-sm: 36rem;
+    --breakpoint-md: 48rem;
+    --breakpoint-lg: 62rem;
+    --breakpoint-xl: 75rem;
+    --breakpoint-2xl: 87.5rem;
+
+}
