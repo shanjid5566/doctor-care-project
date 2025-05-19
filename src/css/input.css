@@ -17,3 +17,7 @@
     --breakpoint-2xl: 87.5rem;
 
 }
+
+.container {
+    @apply md:max-w-2xl lg:max-w-4xl xl:max-w-7xl mx-auto flex justify-between items-center p-4
+}
