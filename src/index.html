@@ -25,19 +25,17 @@
     <!-- Header Section Start here -->
     <header
       id="header"
-      class="bg-primary-green-light fixed w-full z-50 top-0 left-0 shadow-md"
+      class="bg-primary-green-light fixed top-0 left-0 right-0 w-full z-50"
     >
-      <!-- navaber start -->
-      <nav class="wrapper">
-        <!-- logo -->
+      <nav class="wrapper px-4 py-4 flex justify-between items-center">
+        <!-- Logo -->
         <div class="text-xl font-bold">
-          <a href="/" class="text-black"
+          <a href="./index.html" class="text-black"
             >Doctor<span class="text-primary-green">Care</span></a
           >
         </div>
 
-        <!-- navigation menu start here -->
-
+        <!-- Menu Items -->
         <ul class="hidden md:flex md:space-x-4 lg:space-x-8">
           <li>
             <a
@@ -69,31 +67,99 @@
           </li>
         </ul>
 
-        <!-- call to action btn -->
-
+        <!-- Call to Action Button -->
         <div class="hidden md:block">
           <a
             id="contact-btn"
             href="#contact"
-            class="md:w-56 text-primary-green hover:text-white border border-primary-green py-2.5 px-6 rounded-full hover: hover:bg-primary-green transtition-all duration-200"
+            class="md:w-56 text-primary-green hover:bg-primary-green hover:text-white border border-primary-green px-6 py-2.5 rounded-full transition md:flex items-center justify-center"
             >Agendar consulta</a
           >
         </div>
 
-        <!-- hambarger button -->
+        <!-- Mobile Nav -->
         <div class="md:hidden">
           <button
-            id="maobile-menu-button"
+            id="mobile-menu-button"
             class="navbar-burger flex items-center p-3"
           >
             <img
               src="./image/menu-icon.svg"
-              alt="menu icon"
-              class="block size-4 fill-current"
+              alt=""
+              class="block h-4 w-4 fill-current"
             />
           </button>
         </div>
       </nav>
+
+      <!-- Mobile Menu Items -->
+      <div id="mobile-menu" class="navbar-menu relative z-50 hidden">
+        <div
+          class="navbar-backdrop fixed inset-0 bg-primary-green opacity-25"
+        ></div>
+        <nav
+          class="fixed top-0 left-0 bottom-0 flex flex-col w-full max-w-sm py-6 px-6 text-primary bg-primary-green border-r overflow-y-auto"
+        >
+          <div class="flex items-center justify-between mb-8">
+            <a
+              href="/"
+              class="text-white mr-auto text-xl font-semibold leading-none"
+              >Doctor<span class="text-white">Care</span></a
+            >
+            <button id="mobile-menu-close" class="navbar-close">
+              <img
+                src="./image/close-menu-icon.svg"
+                alt=""
+                class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+              />
+            </button>
+          </div>
+          <div>
+            <ul>
+              <li class="mb-1">
+                <a
+                  class="block p-4 text-sm font-semibold text-white hover:bg-blue-50 hover:text-primary rounded"
+                  href="#home"
+                  >Início</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  class="block p-4 text-sm font-semibold text-white hover:bg-blue-50 hover:text-primary rounded"
+                  href="#about"
+                  >Sobre</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  class="block p-4 text-sm font-semibold text-white hover:bg-blue-50 hover:text-primary rounded"
+                  href="#services"
+                  >Serviços</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  class="block p-4 text-sm font-semibold text-white hover:bg-blue-50 hover:text-primary rounded"
+                  href="#contact"
+                  >Depoimentos</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="mt-auto">
+            <div class="pt-6">
+              <a
+                class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-primary-green hover:bg-primary-green/20 rounded-xl"
+                href="#contact"
+                >Agendar consulta</a
+              >
+            </div>
+            <p class="my-4 text-xs text-center text-white">
+              <span>Copyright © 2025</span>
+            </p>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <!-- hero section starts here -->
@@ -105,7 +171,7 @@
       <div
         class="wrapper flex md:flex-row flex-col items-center justify-between text-center"
       >
-        <div class="w-full md:w-2/3 md:text-left mb-4 md:mb-0 hero-section">
+        <div class="w-full md:w-2/3 md:text-left mb-4 md:mb-0 hero-content">
           <h2 class="text-sm text-primary-green font-bold mb-2 mt-8">
             BOAS-VINDAS A DOCTORCARE 👋
           </h2>
@@ -140,7 +206,7 @@
     <!-- starts section starts-->
 
     <section
-      class="container xl:max-w-screen-xl lg:max:w-screen-lg mx-auto bg-primary-green-beige md:h-52 -mt-26 rounded-lg shadow-lg z-10 relative p-8 pt-12 px-4"
+      class="container xl:max-w-screen-xl lg:max:w-screen-lg mx-auto bg-primary-green-beige md:h-52 -mt-26 rounded-lg shadow-lg z-10 relative p-8 pt-12 px-4 stats-section"
     >
       <div
         class="grid grid-cols-1 md:grid-cols-3 gap-* items-center justify-between"
@@ -216,7 +282,7 @@
       <div
         class="wrapper py-12 px-4 flex flex-col-reverse md:flex-row items-center justify-between gap-12"
       >
-        <div class="w-full md:w-1/2 md:pl-8 contract-section">
+        <div class="w-full md:w-1/2 md:pl-8 contact-content">
           <h2
             class="text-3xl md:text-3xl font-bold text-secondary-gray-headline mb-6 md:w-13/14 lg:w-5/6"
           >
@@ -237,7 +303,7 @@
             <a href="#contact">Agende sua consulta</a>
           </button>
         </div>
-        <div class="w-full md:w-1/2 mb-8 md:mb-0 contract-section">
+        <div class="w-full md:w-1/2 mb-8 md:mb-0 contact-content">
           <img
             src="./image/contact.png"
             alt="Doctor counceling"
@@ -288,7 +354,9 @@
         </div>
       </div>
     </footer>
-
+    <script src="./js/app.js"></script>
     <script src="./js/services.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="./js/animation.js"></script>
   </body>
 </html>
